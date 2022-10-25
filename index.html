@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+<head>
+	<meta charset="utf-8"/>
+	<title>Agnieszka Krajewska Fizjoterapia</title>
+	<link rel='stylesheet' href='style.css' type="text/css"/>
+	<meta name="description" content="Moja praca"/>
+	<meta name="keywords" content="fizjoterapia, noworodek, niemowlę, chusto noszenie, dziecko"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1"/>
+	<link href="css/fontello.css" link rel='stylesheet' type="text/css"/>
+</head>
+<body>
+	<main>
+		<header>
+			<img src="img/newlogo.png"/>
+			<nav>
+				<ol class="menu_poziome">
+					<li><a href="index.html">Główna</a></li>
+					<li><a href="news.html">Aktualności</a></li>
+					<li><a href="fizjo.html">Fizjoterapia i metody:</a>
+						<ul>
+							<li><a href="bobath.html"> NDT-Bobath</a></li>
+							<li><a href="fits.html">FITS</a></li>
+							<li><a href="prechtl.html">Metodą Prechtla</a></li>
+							<li><a href="IS.html">Integracja Sensoryczna</a></li>
+						</ul>
+					</li>
+					<li><a href="contact.html">Kontakt</a></li>
+					<li><a href="calendar.html" style="color: white;">Umów się na wizytę</a></li>
+				</ol>
+			</nav>
+		</header>
+		<aside>
+			<img src="img/ad.png">
+		</aside>
+		<article>
+			<section>
+				<h1>Agnieszka Krajewska - Magister Fizjoterapii Pediatrycznej - Specjalistka z powołania :* </h1>
+			</section>
+			<section>
+				<h2>Tu powstanie alternatywny tekst o mojej kochanej i zdolnej Agusi o jej doświadczeniu oraz pracy jaką wykonuje. Tu powstanie alternatywny tekst o mojej kochanej i zdolnej Agusi o jej doświadczeniu oraz pracy jaką wykonuje. Tu powstanie alternatywny tekst o mojej kochanej i zdolnej Agusi o jej doświadczeniu oraz pracy jaką wykonuje.</h2>
+				<img src="img/agusia.jpeg" width="240px"/>	
+			</section>
+		</article>
+		<footer>
+			<div class="fb">
+				<i class="icon-facebook-rect"></i>
+			</div>
+			<div class="in">
+				<i class="icon-instagram"></i>
+			</div>
+			<div class="ld">
+				<i class="icon-linkedin-rect"></i>
+			</div>
+			<div class="yt">
+				<i class="icon-youtube"></i>
+			</div>
+			<div class="copyright">&copy; 2022 Paweł Em - pseudo:"Słodziak Agusi"</div>
+			<div style="clear:both"</div>
+		</footer>
+	</main>
+	<script src="jquery-3.6.1.min.js"></script>
+	<script>
+		$(document).ready(function(){
+		var NavY = $('nav').offset().top;
+		var stickyNav = function(){
+		var ScrollY = $(window).scrollTop();
+		if (ScrollY > NavY) {
+			$('nav').addClass('sticky');
+		} else {
+			$('nav').removeClass('sticky');
+		}
+		};
+		stickyNav();
+		$(window).scroll(function() {
+			stickyNav();
+		});
+		});
+	</script>
+</body>
+</html>
