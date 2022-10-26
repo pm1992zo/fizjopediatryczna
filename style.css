@@ -1,6 +1,5 @@
 body  {
-  background-image: linear-gradient(to left, #5b69e3 10%, #ffb6c1 82%);
-  margin: 0!important;	
+    margin: 0!important;	
 }
 
 main  {
@@ -13,7 +12,12 @@ header  {
     text-align: center; 
     margin-left: auto;
 	margin-right: auto;
-    width: 1040px; 
+    width: 1040px;
+    height: 210px;
+    border: 0;
+    margin-top: 0;
+    padding: 0;
+    background-color: #5b69e3;
 }
 
 aside  {
@@ -25,23 +29,35 @@ aside  {
 	margin-left: 3.18cm;
 	margin-right: 0;
 	border: 0;
+	background-color: white;
+}
+
+article {
+	background-image: url(img/article.png);   
+	opacity: 0.9; 
+	width: 880px;
+	height: 600px;
+	text-align: center; 
+    margin-left: auto;
+	margin-right: auto;
+	float: left;
 }
 
 h1  {
 	float: left;
 	width: 880px;
-	text-align:-webkit-center;
-	color: #08dcfc; 
-	font-family: SignPainter;
-	font-size: 30px;
+	text-align: center;
+	color: #d60033; 
+	font-family: Skia;
+	font-size: 22px;
 	background-color: rgba(61, 53, 224, 0.37);
-	margin:0px;
-	height: 40px;
+	margin:0;
+	height: 30px;
 	border:0;
 	padding: 0;
-
 	
 }
+
 h2  {
 	float: left;
 	width: 600px;
@@ -70,7 +86,6 @@ h4  {
 footer {
 	clear: both;
 	padding: 0;
-	letter-spacing: 5px;
 	font-family: Arial;
 	font-weight: bold;
 	color: white;
@@ -90,17 +105,17 @@ ol {
 	margin: 0;
 	list-style-type: none;
 	font-size: 15px;
-	height: 25px;
+	height: 30px;
 	line-height: 200%;
 	
 }
 
 ol a  {
-	color: #1500c4;
+	color: #08dcfc;
 	font-family: Silom;
 	text-decoration: none;
 	display: block;
-	background-color:rgba(186, 177, 177, 0.65);
+	background-color: #5b69e3;
 }
 
 ol > li  {
@@ -111,7 +126,7 @@ ol > li  {
 
 li  {
 	float: left;
-	width: 204px;
+	width: 208px;
 	height: 30px;
 }
 
@@ -119,7 +134,7 @@ ol >li >ul  {
 	list-style-type: none;
 	padding: 0;
 	margin: 0;
-	height: 25px;
+	height: 30px;
 	display: none;
 }
 
@@ -128,7 +143,7 @@ ol > li:hover >ul  {
 }
 
 ol > li > ul > li  {
-	background-color: rgba(0, 0, 0, 0.8);
+	background-color: #ffb6c1;
 	position:relative;
 	z-index: 100;
 }
@@ -143,43 +158,39 @@ a:hover  {
 }
 
 .fb {
-float: left;
-width: 40px;
-height: 40px;
+	float: left;
+	width: 30px;
+	height: 30px;
+	background-color: #4668b3;
+
 }
 
 .fb:hover{
-background-color: #4668b3;
+	background-color: #3557b2;
 }
 
 .in {
-float: left;
-width: 40px;
-height: 40px;
+	float: left;
+	width: 30px;
+	height: 30px;
+	background-color: #d62976;
 }
 
 .in:hover{
-background-color: #d62976;
+	background-color: #d51865;
 }
 
-.ld {
-float: left;
-width: 40px;
-height: 40px;
+.zl {
+	float: left;
+	width: 100px;
+	height: 30px;
+	font-size: 12px;
+	font-family: Helvetica Neue;
+	background-color: #20c997;
 }
 
-.ld:hover{
-background-color: #0e76a8;
-}
-
-.yt {
-float: left;
-width: 40px;
-height: 40px;
-}
-
-.yt:hover{
-background-color: #d94348;
+.zl:hover{
+	background-color: #00c775;
 }
 
 .sticky {
@@ -194,6 +205,17 @@ background-color: #d94348;
     width: 1040px; 
     background-color:rgba(186, 177, 177, 0.65);
 }
+
 .copyright {
-	position: relative; top: 12px;
+	position: relative; top: 7px;
+	letter-spacing: 5px;
+	list-style-type: none;
+}
+
+.wizyta {
+	color: white;
+}
+.wizyta:hover {
+	background-color: grey;
+	color: red;
 }
